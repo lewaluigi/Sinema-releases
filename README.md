@@ -2,7 +2,7 @@
 
 Versões para instalar do Sinema, a app de Android TV. O código é privado; aqui ficam só os ficheiros de instalação.
 
-**Última versão:** 1.6.1
+**Última versão:** 1.6.2
 
 **Instalar numa Android TV / Google TV / Nvidia Shield**
 
