@@ -1,6 +1,6 @@
 {
-  "_nota": "Identidade da app na Microsoft Store: copiar de Partner Center › Sinema › Product identity. Enquanto tiver os valores de teste, o pacote serve só para verificar que instala.",
-  "name": "Sinema.Teste",
-  "publisher": "CN=Sinema Teste",
-  "publisherDisplayName": "Sinema"
+  "_nota": "Identidade da app na Microsoft Store (Partner Center › Sinema Player › Product identity). Store ID 9NH3ZTDCX3SN.",
+  "name": "luigis.SinemaPlayer",
+  "publisher": "CN=B40EA18E-C891-4A0A-8AEA-B65B1F23CEC2",
+  "publisherDisplayName": "lui gis"
 }
