@@ -86,7 +86,7 @@ jobs:
           $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\$($p.PackageFamilyName)" -Recurse -Filter sinema.log -ErrorAction SilentlyContinue | Select-Object -First 1
           if ($log) { Get-Content $log.FullName -Tail 20 }
           if (-not $proc) { throw "O Sinema não arrancou a partir do pacote" }
-          & "$($p.InstallLocation)\mpv\mpv.exe" --version | Select-Object -First 1
+          & "$($p.InstallLocation)\app\mpv\mpv.exe" --version | Select-Object -First 1
           $proc | Stop-Process -Force
 
       - uses: softprops/action-gh-release@v2
