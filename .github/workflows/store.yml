@@ -86,7 +86,8 @@ jobs:
           $log = Get-ChildItem "$env:LOCALAPPDATA\Packages\$($p.PackageFamilyName)" -Recurse -Filter sinema.log -ErrorAction SilentlyContinue | Select-Object -First 1
           if ($log) { Get-Content $log.FullName -Tail 20 }
           if (-not $proc) { throw "O Sinema não arrancou a partir do pacote" }
-          & "$($p.InstallLocation)\app\mpv\mpv.exe" --version | Select-Object -First 1
+          # Só a própria app pode correr o mpv dentro do pacote: ela regista no arranque se o conseguiu.
+          if (-not $log -or -not (Select-String -Path $log.FullName -Pattern "player: .*mpv v" -Quiet)) { throw "O Sinema não conseguiu correr o leitor (mpv) dentro do pacote" }
           $proc | Stop-Process -Force
 
       - uses: softprops/action-gh-release@v2
