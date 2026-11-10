@@ -1,0 +1,76 @@
+name: Instalador Windows
+
+# Faz o instalador do Sinema para Windows a partir de windows/lib (os .jar, postos aqui a cada versão), junta o Java e
+# o mpv, e publica-o como a versão mais recente. O link fixo é:
+# https://github.com/lewaluigi/Sinema-releases/releases/latest/download/Sinema-Setup.exe
+on:
+  push:
+    branches: [main]
+    paths: ['windows/**', '.github/workflows/windows.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  installer:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: mpv (o leitor)
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $rel = Invoke-RestMethod -Headers @{ Authorization = "Bearer $env:GH_TOKEN" } https://api.github.com/repos/shinchiro/mpv-winbuild-cmake/releases/latest
+          $asset = $rel.assets | Where-Object { $_.name -match '^mpv-x86_64-\d+-git-[0-9a-f]+\.7z$' } | Select-Object -First 1
+          if (-not $asset) { $rel.assets | ForEach-Object { $_.name }; throw "Não encontrei o mpv x86_64 na versão mais recente." }
+          Write-Host "mpv: $($asset.name)"
+          Invoke-WebRequest $asset.browser_download_url -OutFile mpv.7z
+          7z x mpv.7z -ompv-all | Out-Null
+          New-Item -ItemType Directory -Force windows/lib/mpv | Out-Null
+          Copy-Item mpv-all/mpv.exe windows/lib/mpv/
+          Get-ChildItem mpv-all -Filter *.dll | Copy-Item -Destination windows/lib/mpv/
+          & windows/lib/mpv/mpv.exe --version | Select-Object -First 1
+
+      - name: Instalador
+        shell: pwsh
+        run: |
+          $v = (Get-Content windows/version.txt -Raw).Trim()
+          if (-not (Get-Command candle.exe -ErrorAction SilentlyContinue)) {
+            if ($env:WIX -and (Test-Path "$env:WIX\bin\candle.exe")) { $env:PATH += ";$env:WIX\bin" }
+            else { choco install wixtoolset -y --no-progress; $env:PATH += ";C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files (x86)\WiX Toolset v3.11\bin" }
+          }
+          jpackage --type exe --name Sinema --app-version $v --vendor Sinema --description "Sinema" `
+            --input windows/lib --main-jar sinema.jar --main-class dev.alder.desktop.MainKt --icon windows/lib/icon.ico `
+            --java-options '-Dcompose.application.resources.dir=$APPDIR' `
+            --win-per-user-install --win-menu --win-menu-group Sinema --win-shortcut `
+            --win-upgrade-uuid 6f0b5c0e-5d0a-4c57-9d54-7c1f3a2b8e41 --dest out
+          Get-ChildItem out
+          Move-Item (Get-ChildItem out -Filter *.exe | Select-Object -First 1).FullName out/Sinema-Setup.exe
+          "VERSION=$v" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: windows-v${{ env.VERSION }}
+          name: Sinema ${{ env.VERSION }} para Windows
+          body: |
+            Instalador do Sinema para Windows (inclui o leitor mpv). Corra o Sinema-Setup.exe; se o Windows avisar que não conhece a app, escolha "Mais informações" e "Executar assim mesmo".
+          files: out/Sinema-Setup.exe
+          make_latest: true
+
+      - name: Anunciar a versão às apps já instaladas
+        shell: pwsh
+        run: |
+          $j = Get-Content latest.json -Raw | ConvertFrom-Json
+          $w = [pscustomobject]@{ version = $env:VERSION; url = "https://github.com/lewaluigi/Sinema-releases/releases/latest/download/Sinema-Setup.exe" }
+          $j | Add-Member -NotePropertyName windows -NotePropertyValue $w -Force
+          $j | ConvertTo-Json -Compress | Set-Content latest.json -NoNewline
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add latest.json
+          git diff --cached --quiet; if ($LASTEXITCODE -ne 0) { git commit -m "Sinema $env:VERSION para Windows"; git pull --rebase; git push }
