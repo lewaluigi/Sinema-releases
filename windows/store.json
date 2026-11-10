@@ -1,0 +1,6 @@
+{
+  "_nota": "Identidade da app na Microsoft Store: copiar de Partner Center › Sinema › Product identity. Enquanto tiver os valores de teste, o pacote serve só para verificar que instala.",
+  "name": "Sinema.Teste",
+  "publisher": "CN=Sinema Teste",
+  "publisherDisplayName": "Sinema"
+}

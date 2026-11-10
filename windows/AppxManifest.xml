@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Manifesto do pacote da Microsoft Store. Os @VALORES@ são postos pelo workflow store.yml (windows/store.json, windows/version.txt). -->
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+         IgnorableNamespaces="uap rescap">
+  <Identity Name="@NAME@" Publisher="@PUBLISHER@" Version="@VERSION@" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>Sinema</DisplayName>
+    <PublisherDisplayName>@PUBLISHERNAME@</PublisherDisplayName>
+    <Logo>store\logo50.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="pt-PT" />
+  </Resources>
+  <Applications>
+    <Application Id="Sinema" Executable="Sinema.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Sinema" Description="Filmes, séries e TV em direto a partir da sua conta Stremio."
+                          BackgroundColor="transparent" Square150x150Logo="store\logo150.png" Square44x44Logo="store\logo44.png">
+        <uap:DefaultTile Wide310x150Logo="store\wide310x150.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>
