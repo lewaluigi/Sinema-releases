@@ -12,6 +12,8 @@ Versões para instalar do Sinema, a app de Android TV. O código é privado; aqu
    `https://github.com/lewaluigi/Sinema-releases/raw/main/Sinema.apk`
 4. Instale. Depois, o Sinema atualiza-se sozinho a partir daqui.
 
+[Política de privacidade](PRIVACIDADE.md)
+
 **Instalar no Windows**
 
 Descarregue e corra o instalador: `https://github.com/lewaluigi/Sinema-releases/releases/latest/download/Sinema-Setup.exe`
