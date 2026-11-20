@@ -47,6 +47,9 @@ https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/TVI_Internacional.m3u8
 #EXTINF:-1 group-title="Generalistas" tvg-id="PortoCanal.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/PortoCanal.pt.png",Porto Canal
 https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="Generalistas" tvg-id="PortoCanal.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/PortoCanal.pt.png",Porto Canal
+https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/smil:pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="Notícias" tvg-id="RTPNoticias.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTPNoticias.pt.png",RTP Notícias
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:159.0) Gecko/20100101 Firefox/159.0
 #EXTVLCOPT:http-origin=https://www.rtp.pt
@@ -70,6 +73,9 @@ https://6e52fb8b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheH
 
 #EXTINF:-1 group-title="Notícias" tvg-id="ARTV.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/ARTV.pt.png",ARTV
 https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
+
+#EXTINF:-1 group-title="Notícias" tvg-id="ARTV.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/ARTV.pt.png",ARTV
+https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8
 
 #EXTINF:-1 group-title="Entretenimento" tvg-id="RTPMemoria.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTPMemoria.pt.png",RTP Memória
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:159.0) Gecko/20100101 Firefox/159.0
@@ -128,6 +134,9 @@ https://raw.githubusercontent.com/LITUATUI/M3UPT/main/M3U/Vmais_TVI.m3u8
 #EXTINF:-1 group-title="Entretenimento" tvg-id="ADBTV.pt",ADtv
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 
+#EXTINF:-1 group-title="Entretenimento" tvg-id="ADBTV.pt",ADtv
+https://playout172.livextend.cloud/liveiframe/_definst_/ngrp:liveartvabr_abr/playlist.m3u8
+
 #EXTINF:-1 group-title="Desporto" tvg-id="Canal11.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.pt.png",Canal 11 Internacional
 https://dy4isoelz3s0x.cloudfront.net/0_hd.m3u8
 
@@ -158,6 +167,9 @@ https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
 #EXTINF:-1 group-title="Infantil" tvg-id="KuriakosKids.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosKids.pt.png",Kuriakos Kids
 https://w2.manasat.com/kkids/kkids.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="Infantil" tvg-id="KuriakosKids.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosKids.pt.png",Kuriakos Kids
+https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="Documentários" tvg-id="LoveNature.ca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LoveNature.ca.png",Love Nature
 https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8
 
@@ -170,8 +182,14 @@ https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
 #EXTINF:-1 group-title="Religião" tvg-id="KuriakosTV.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosTV.pt.png",Kuriakos TV
 https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="Religião" tvg-id="KuriakosTV.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosTV.pt.png",Kuriakos TV
+https://w1.manasat.com/ktv/smil:ktv.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="Religião" tvg-id="KuriakosCine.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosCine.pt.png",Kuriakos Cine
 https://w2.manasat.com/kcine/kcine.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="Religião" tvg-id="KuriakosCine.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosCine.pt.png",Kuriakos Cine
+https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="Religião" tvg-id="TVMana1.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVMana1.pt.png",TV Maná 1
 https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
@@ -187,6 +205,12 @@ https://w1.manasat.com/igrejaonline/smil:igrejaonline.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AngelTV.in" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religião",Angel TV Portuguese
 https://janya-digimix.akamaized.net/vglive-sk-382409/portuese/ngrp:angelportuguese_all/playlist.m3u8
+
+#EXTINF:-1 group-title="Religião" tvg-id="TVManaBrasil.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVManaBrasil.pt.png",TV Maná Brasil
+https://w1.manasat.com/tvmana-brasil/smil:tvmana-brasil.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="Religião" tvg-id="TVManaMocambique.mz" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVManaMocambique.mz.png",TV Maná Moçambique
+https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="Internacional" tvg-id="CNNBrasil.br" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNNBrasil.br.png",CNN Brasil
 https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
@@ -229,3 +253,6 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 
 #EXTINF:-1 group-title="Internacional" tvg-id="TVBRICSPortuguese.br" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVBRICSPortuguese.br.png",TV BRICS Portuguese
 https://porbrics.mediacdn.ru/cdn/brics/portuguese/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="MuzangalaTV.ao" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MuzangalaTV.ao.png",Muzangala TV
+https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8
