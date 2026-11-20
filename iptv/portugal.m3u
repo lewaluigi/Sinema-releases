@@ -131,9 +131,6 @@ https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
 #EXTINF:-1 group-title="Desporto" tvg-id="RedBullTV.at" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RedBullTV.at.png",Red Bull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 
-#EXTINF:-1 group-title="Música" tvg-id="TraceToca.fr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TraceToca.fr.png",Trace Toca
-https://channels.trace.plus/Traceprod/TOCA_hd/index.m3u8
-
 #EXTINF:-1 group-title="Música" tvg-id="KuriakosMusic.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosMusic.pt.png",Kuriakos Music
 https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
 
@@ -184,9 +181,6 @@ https://redebrasil.nuvemplay.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="Internacional" tvg-id="BBCNews.uk" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BBCNews.uk.png",BBC News
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="CNNInternational.us" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CNNInternational.us.png",CNN
-https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ury0meh5m4nzm/index.m3u8
 
 #EXTINF:-1 group-title="Internacional" tvg-id="France24English.fr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/France24.fr.png",France 24 English
 https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
