@@ -179,12 +179,6 @@ https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
 #EXTINF:-1 group-title="Internacional" tvg-id="TVZimbo.ao" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVZimbo.ao.png",TV Zimbo
 https://sgn-cdn-video.vods2africa.com/Tv-Zimbo/index.fmp4.m3u8
 
-#EXTINF:-1 group-title="Internacional" tvg-id="TVM.mz" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVM.mz.png",TVM
-https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="TVMInternacional.mz" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVMInternacional.mz.png",TVM Internacional
-https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
-
 #EXTINF:-1 group-title="Internacional" tvg-id="RedeBrasil.br" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RedeBrasil.br.png",Rede Brasil
 https://redebrasil.nuvemplay.live/hls/stream.m3u8
 
