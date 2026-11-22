@@ -1,5 +1,5 @@
 #EXTM3U
-# Sinema: canais gratuitos e oficiais (de M3UPT), testados a tocar a partir de Portugal em 2026-11-20.
+# Sinema: canais gratuitos e oficiais (de M3UPT), testados a tocar a partir de Portugal em 2026-11-20 e revistos em 2026-11-22.
 # Só ficam os que tocaram e falam português (de Portugal, do Brasil ou de África); canais pagos não entram.
 
 #EXTINF:-1 group-title="Generalistas" tvg-id="SIC.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.pt.png",SIC
@@ -223,3 +223,18 @@ https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
 
 #EXTINF:-1 group-title="Internacional" tvg-id="MuzangalaTV.ao" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MuzangalaTV.ao.png",Muzangala TV
 https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="TVBrasil.br" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png",TV Brasil
+https://tvbrasil-stream.ebc.com.br/index.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="TVCamara.br" tvg-logo="https://i.imgur.com/Sdou1Ab.png",TV Câmara
+https://stream3.camara.gov.br/tv1/manifest.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="CanalGov.br" tvg-logo="https://i.imgur.com/rHPY0Yv.png",Canal Gov
+https://canalgov-stream.ebc.com.br/index.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="TVERS.br" tvg-logo="https://i.imgur.com/MQ6lJpS.png",TVE RS
+https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="RedeMinas.br" tvg-logo="https://i.imgur.com/MtQWAHv.png",Rede Minas
+https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/playlist.m3u8
