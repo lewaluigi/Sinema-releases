@@ -1,6 +1,6 @@
 #EXTM3U
 # Sinema: canais gratuitos e oficiais (de M3UPT), testados a tocar a partir de Portugal em 2026-11-20.
-# Só ficam os que tocaram; canais pagos (Sport TV, Star, etc.) não entram.
+# Só ficam os que tocaram e falam português (de Portugal, do Brasil ou de África); canais pagos não entram.
 
 #EXTINF:-1 group-title="Generalistas" tvg-id="SIC.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC.pt.png",SIC
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:159.0) Gecko/20100101 Firefox/159.0
@@ -140,20 +140,11 @@ https://playout172.livextend.cloud/liveiframe/_definst_/ngrp:liveartvabr_abr/pla
 #EXTINF:-1 group-title="Desporto" tvg-id="Canal11.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Canal11.pt.png",Canal 11 Internacional
 https://dy4isoelz3s0x.cloudfront.net/0_hd.m3u8
 
-#EXTINF:-1 group-title="Desporto" tvg-id="Motorvision.de" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Motorvision.de.png",Motorvision
-https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8
-
-#EXTINF:-1 group-title="Desporto" tvg-id="RedBullTV.at" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RedBullTV.at.png",Red Bull TV
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-
 #EXTINF:-1 tvg-id="FIFAPlus.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png" group-title="Desporto",FIFA+ Português
 https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8
 
 #EXTINF:-1 group-title="Música" tvg-id="KuriakosMusic.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosMusic.pt.png",Kuriakos Music
 https://w2.manasat.com/kmusic/kmusic.smil/playlist.m3u8
-
-#EXTINF:-1 group-title="Música" tvg-id="XITE.nl" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/XITE.nl.png",XITE
-https://xite-rakuten.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 group-title="Música" tvg-id="TraceBrasil.fr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TraceBrasil.fr.png",Trace Brasil
 https://amg01131-tracetv-tracebrazuca-xiaomi-vvr19.amagi.tv/playlist/amg01131-tracetv-tracebrazuca-xiaomi/playlist.m3u8
@@ -169,15 +160,6 @@ https://w2.manasat.com/kkids/kkids.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="Infantil" tvg-id="KuriakosKids.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosKids.pt.png",Kuriakos Kids
 https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8
-
-#EXTINF:-1 group-title="Documentários" tvg-id="LoveNature.ca" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/LoveNature.ca.png",Love Nature
-https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8
-
-#EXTINF:-1 group-title="Documentários" tvg-id="Travelxp.in" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Travelxp.in.png",Travelxp
-https://b3cc72d0160f4e168712e880c78c4dcc.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-pt_TravelXP/playlist.m3u8
-
-#EXTINF:-1 group-title="Documentários" tvg-id="CGTNDocumentary.cn" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTNDocumentary.cn.png",CGTN Documentary
-https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8
 
 #EXTINF:-1 group-title="Religião" tvg-id="KuriakosTV.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/KuriakosTV.pt.png",Kuriakos TV
 https://w1.manasat.com/ktv/ktv.smil/playlist.m3u8
@@ -221,27 +203,6 @@ https://sgn-cdn-video.vods2africa.com/Tv-Zimbo/index.fmp4.m3u8
 #EXTINF:-1 group-title="Internacional" tvg-id="RedeBrasil.br" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RedeBrasil.br.png",Rede Brasil
 https://redebrasil.nuvemplay.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="Internacional" tvg-id="BBCNews.uk" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/BBCNews.uk.png",BBC News
-https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="France24English.fr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/France24.fr.png",France 24 English
-https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_5000.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="France24French.fr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/France24.fr.png",France 24 Français
-https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="TRTWorld.tr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TRTWorld.tr.png",TRT World
-https://tv-trtworld.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="NHKWorldJapan.jp" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/NHKWorldJapan.jp.png",NHK World Japan
-https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="EuronewsSpanish.fr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png",Euronews ES
-https://cdn-euronews.akamaized.net/live/eds/euronews-es/25053/index.m3u8
-
-#EXTINF:-1 group-title="Internacional" tvg-id="EuronewsFrench.fr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Euronews.png",Euronews FR
-https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8
-
 #EXTINF:-1 group-title="Internacional" tvg-id="CanalMacau.mo" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TDMMacauSatellite.mo.png",TDM Macau
 https://globallive.tdm.com.mo/ch2/ch2.live/playlist.m3u8
 
@@ -253,6 +214,12 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 
 #EXTINF:-1 group-title="Internacional" tvg-id="TVBRICSPortuguese.br" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVBRICSPortuguese.br.png",TV BRICS Portuguese
 https://porbrics.mediacdn.ru/cdn/brics/portuguese/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="TVM.mz" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVM.mz.png",TVM
+https://stream.tvm.co.mz/hls/tvm/playlist.m3u8
+
+#EXTINF:-1 group-title="Internacional" tvg-id="TVMInternacional.mz" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVMInternacional.mz.png",TVM Internacional
+https://stream.tvm.co.mz/hls/tvmi/playlist.m3u8
 
 #EXTINF:-1 group-title="Internacional" tvg-id="MuzangalaTV.ao" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/MuzangalaTV.ao.png",Muzangala TV
 https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8
